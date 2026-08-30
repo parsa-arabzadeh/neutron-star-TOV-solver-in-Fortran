@@ -1,0 +1,6 @@
+## Requirements
+
+This solver is fully self-contained and does not require external mathematical libraries (such as LAPACK or BLAS). You only need:
+
+* **gfortran** (or any Fortran compiler supporting the 2008 standard)
+* **gnuplot** (for rendering the output data into graphs)
