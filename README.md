@@ -2,6 +2,8 @@
 
 Numerical solution of the Tolman–Oppenheimer–Volkoff equations for neutron stars using Fortran, including equation of state modeling and mass-radius relation calculations.
 
+---
+
 ## Overview
 
 This repository contains a computational pipeline written in **Fortran 2008** for studying the macroscopic structure of neutron stars.
@@ -41,7 +43,7 @@ The solver is designed to accept tabulated EOS data in the required input format
 ## How to Compile and Run
 
 ### 1. Compile
-gfortran neutron_star.f90 -o neutron_star
+gfortran -O2 -std=f2008 neutron_star.f90 -o neutron_star
 
 ### 2. Run
 ./neutron_star mock_eos_data.csv
@@ -71,3 +73,10 @@ The included sample EOS dataset is synthetic and is not intended to reproduce an
 The numerical results obtained from the sample data should therefore not be interpreted as physical predictions or as results from a specific nuclear interaction.
 
 The solver is designed to accept tabulated EOS data as input and can be adapted for research applications with appropriate physical input data and validation.
+
+## Author
+
+Parsa Arabzadeh Asadi
+
+MSc Physics  
+University of Tehran
