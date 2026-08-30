@@ -38,7 +38,21 @@ The solver is designed to accept tabulated EOS data in the required input format
 
 The numerical solver integrates the general relativistic Tolman-Oppenheimer-Volkoff (TOV) equations to determine the hydrostatic equilibrium of the star:
 
-$$\frac{dP}{dr}=-\frac{G}{r^2}\frac{\left(\epsilon+\frac{P}{c^2}\right)\left(m+4\pi r^3\frac{P}{c^2}\right)}{1-\frac{2Gm}{rc^2}}$$
+$$
+\frac{dP}{dr}
+=-\frac{
+G(\epsilon+P)
+\left(
+m+\frac{4\pi r^3P}{c^2}
+\right)
+}
+{
+c^2 r^2
+\left(
+1-\frac{2Gm}{rc^2}
+\right)
+}
+$$
 
 $$\frac{dm}{dr}=4\pi r^2\frac{\epsilon}{c^2}$$
 
