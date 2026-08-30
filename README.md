@@ -41,7 +41,6 @@ The solver is designed to accept tabulated EOS data in the required input format
 ## How to Compile and Run
 
 ### 1. Compile
-```bash
 gfortran neutron_star.f90 -o neutron_star
 
 ### 2. Run
