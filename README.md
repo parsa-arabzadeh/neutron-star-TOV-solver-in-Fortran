@@ -34,6 +34,18 @@ No proprietary, unpublished, or manuscript-specific numerical data are included 
 
 The solver is designed to accept tabulated EOS data in the required input format.
 
+## Core Equations
+
+The numerical solver integrates the general relativistic Tolman-Oppenheimer-Volkoff (TOV) equations to determine the hydrostatic equilibrium of the star[cite: 2]:
+
+$$\frac{dP}{dr}=-\frac{G}{r^2}\frac{\left(\epsilon+\frac{P}{c^2}\right)\left(m+4\pi r^3\frac{P}{c^2}\right)}{1-\frac{2Gm}{rc^2}}$$
+
+$$\frac{dm}{dr}=4\pi r^2\frac{\epsilon}{c^2}$$
+
+The macroscopic structure is closed by a barotropic equation of state $P=P(\epsilon)$[cite: 2]. The thermodynamic pressure is computed consistently from the energy density $\epsilon$ and baryon density $\rho$ using the fundamental relation[cite: 1]:
+
+$$P=\rho^2\frac{d(\epsilon/\rho)}{d\rho}$$
+
 ## How to Compile and Run
 
 ### 1. Compile
